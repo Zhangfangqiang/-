@@ -1,0 +1,768 @@
+/* 公共样式 */
+$orange: #fba137;
+* {
+  padding: 0px;
+}
+
+body {
+  font-family: PingFang SC !important;
+  font-size: 14px;
+  > div {
+    margin-bottom: 64px;
+  }
+}
+
+
+
+.pal{
+  left: 20px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+.ml18{
+  margin-left: 18px;
+}
+
+.c-white{
+  color: #FFFFFF;
+}
+
+.c-black {
+  color: #000000;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fw3 {
+  font-weight: 300;
+}
+
+.float-r {
+  float: right;
+}
+
+.float-l {
+  float: left;
+}
+
+.p12 {
+  padding: 12px;
+}
+
+.mt8 {
+  margin-top: 8px;
+}
+
+.ml8 {
+  margin-left: 8px;
+}
+
+.ml12 {
+  margin-left: 12px;
+}
+
+.mt12 {
+  margin-top: 12px !important;
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.mui-card {
+  box-shadow: none;
+}
+
+//公共导航开始
+.mui-bar-tab .mui-tab-item .mui-icon ~ .mui-tab-label {
+  font-size: 10px;
+}
+
+//菜单选中样式
+.mui-bar-tab .mui-tab-item.mui-active {
+  color: #1D8179;
+}
+
+.mui-bar-tab .mui-tab-item .mui-icon {
+
+}
+
+.mui-bar-tab .mui-tab-item .mui-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.zf-nav {
+  height: 64px;
+}
+
+/*首页样式开始*/
+.index-page {
+  padding: 15px;
+  background: #F7F9FB;
+  min-height: 100vh;
+  //轮播图
+  .mui-slider {
+    img {
+      height: 150px;
+      border-radius: 10px;
+    }
+  }
+
+  //九宫格
+  .zf-gong-ge {
+    .mui-grid-view.mui-grid-9 {
+      border: none;
+    }
+
+    .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+      font-size: 14px;
+      margin-top: 2px;
+    }
+
+    .mui-grid-view.mui-grid-9 .mui-table-view-cell {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    ul {
+      background: #F7F9FB !important;
+
+      li {
+        padding-top: 0px !important;
+
+        a {
+          padding-top: 0px !important;
+        }
+      }
+    }
+
+    .mui-grid-view.mui-grid-9 .mui-table-view-cell {
+      border: none;
+    }
+  }
+
+  //文章选卡
+  .zf-article {
+
+    .mui-table-view-cell:after {
+      content: unset;
+    }
+
+    .mui-table-view-cell > a:not(.mui-btn) {
+      white-space: unset;
+    }
+
+    margin: 0px;
+    background: #FFFFFF;
+    border-radius: 8px;
+
+    .mui-card-header {
+      a {
+        color: #999999;
+      }
+    }
+
+    .mui-card-footer:before, .mui-card-header:after {
+      content: none;
+    }
+
+    .mui-card-footer {
+
+      a {
+        display: block;
+        margin: 0 auto;
+        color: $orange;
+      }
+    }
+
+    .mui-card-content {
+      .mui-card-content-inner {
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        .mui-table-view .mui-media-object {
+          max-width: 100px;
+          height: 80px;
+          line-height: 80px;
+          border-radius: 10px;
+        }
+
+        li {
+          .zf-mui-ellipsis {
+            height: 40px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+
+          a {
+            padding-left: 0px;
+            padding-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+/*首页样式结束*/
+
+/*预约咨询开始*/
+.order-page {
+  padding: 5px 15px 15px 15px;
+  background: #F7F9FB;
+  min-height: 100vh;
+
+  .mui-card-header {
+    padding: 0px;
+
+    a {
+      color: #999999;
+    }
+  }
+
+  .mui-card-footer:before, .mui-card-header:after {
+    content: none;
+  }
+
+  //我的预约
+  .my-order {
+    .my-order-list {
+      height: 100px;
+      border-radius: 8px;
+      background: #FFFFFF;
+
+      .my-order-list-title {
+        overflow: hidden;
+
+        span:first-child {
+          float: left;
+          font-size: 16px;
+          color: $orange;
+        }
+
+        span:last-child {
+          float: right;
+        }
+      }
+
+      .my-order-list-content {
+        overflow: hidden;
+
+        .my-order-list-content-info {
+          img {
+            width: 47px;
+            height: 47px;
+            border-radius: 47px;
+          }
+
+        }
+
+        .my-order-list-content-edit-button {
+          overflow: hidden;
+
+          .mui-btn {
+            margin-top: 15px;
+            color: #FFFFFF;
+            background: #1D8179;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 300;
+            padding: 3px 9px 3px 9px;
+          }
+        }
+      }
+
+    }
+  }
+
+  //往期咨询历史
+  .my-history-order {
+    .my-history-order-list {
+      font-weight: 300;
+
+      position: relative;
+      border-radius: 8px;
+      background: #FFFFFF;
+      height: 57px;
+      overflow: hidden;
+      padding: 8px 0px 8px 0px;
+
+
+      .my-history-order-list-time {
+        width: 27.9%;
+
+        p {
+          margin-bottom: 0px;
+        }
+
+        p:first-child {
+          font-size: 14px;
+          text-align: center;
+        }
+
+        p:last-child {
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+
+      .my-history-order-list-info {
+        width: 72.1%;
+
+        .my-history-order-list-info-text {
+          padding-left: 12px;
+
+          h5 {
+            margin-top: 0px;
+            font-weight: 400;
+            font-size: 16px;
+          }
+
+          p {
+            margin: 0px;
+          }
+        }
+
+        .my-history-order-list-info-message {
+          span {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 12px;
+          }
+        }
+      }
+
+    }
+
+    .my-history-order-list-default {
+      .my-history-order-list-time:after {
+        content: '';
+        position: absolute;
+        top: 25%;
+        background: #1D8179;
+        left: 27.5%;
+        width: 1px;
+        height: 30px;
+      }
+
+      .my-history-order-list-info-text {
+        h5 {
+          color: #999999;
+        }
+      }
+
+      .my-history-order-list-info-message {
+        span {
+          color: #1D8179;
+        }
+      }
+    }
+
+    .my-history-order-list-success {
+      .my-history-order-list-time:after {
+        content: '';
+        position: absolute;
+        top: 25%;
+        background: #1D8179;
+        left: 27.5%;
+        width: 1px;
+        height: 30px;
+      }
+
+      .my-history-order-list-info-text {
+        h5 {
+          color: #1D8179;
+        }
+      }
+
+      .my-history-order-list-info-message {
+        span {
+          color: #1D8179;
+        }
+      }
+    }
+
+    .my-history-order-list-warning {
+      .my-history-order-list-time:after {
+        content: '';
+        position: absolute;
+        top: 25%;
+        background: $orange;
+        left: 27.5%;
+        width: 1px;
+        height: 30px;
+      }
+
+      .my-history-order-list-info-text {
+        h5 {
+          color: $orange;
+        }
+      }
+
+      .my-history-order-list-info-message {
+        span {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+/*预约咨询结束*/
+
+/*精品课开始*/
+.course-page {
+  padding: 15px 15px 15px 15px;
+  background: #F7F9FB;
+  min-height: 100vh;
+
+  input[type=search] {
+    border-radius: 30px;
+    border: 1px solid #1D8179;
+    height: 38px;
+    background: #FFFFFF;
+  }
+
+  .mui-search .mui-placeholder {
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .mui-search:before {
+    color: #1D8179 !important;
+    font-weight: 900;
+  }
+
+  .mui-search .mui-placeholder .mui-icon {
+    color: #1D8179 !important;
+    font-weight: 900;
+  }
+
+  .mui-placeholder {
+    span:last-child {
+      float: left;
+      margin-left: 10px;
+      font-size: 14px;
+      height: 38px;
+      line-height: 38px;
+    }
+  }
+
+
+  .course-list {
+
+    .mui-card-header {
+      padding-left: 0px;
+      padding-right: 0px;
+
+      a {
+        color: #999999;
+      }
+    }
+
+    .mui-card-footer:before, .mui-card-header:after {
+      content: none;
+    }
+
+    .course-list-introduce {
+      font-size: 16px;
+    }
+
+
+
+
+    .course-list-info {
+      height: 158px;
+      overflow-x: scroll;
+      white-space: nowrap;
+      scrollbar-width: none; /* firefox */
+      -ms-overflow-style: none; /* IE 10+ */
+
+
+
+      .course-list-info-item {
+        display: inline-block;
+        white-space: normal;
+        width: 152px;
+        margin-right: 8px;
+
+
+
+        a {
+          padding: 0px;
+          margin: 0px;
+          display: inline;
+        }
+
+        img {
+          width: 100%;
+          height: 78px;
+          margin: 0px;
+          display: block;
+        }
+
+        h5 {
+          margin: 8px 0px 0px 0px;
+          font-size: 14px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .course-list-info::-webkit-scrollbar {
+      display: none;
+    }
+
+  }
+}
+/*精品课结束*/
+
+/*活动开始*/
+.activity-page {
+  padding: 5px 15px 15px 15px;
+  background: #F7F9FB;
+  min-height: 100vh;
+
+  .mui-card-header {
+    padding: 0px;
+
+    a {
+      color: #999999;
+    }
+
+    overflow: hidden;
+  }
+
+  .mui-card-footer:before, .mui-card-header:after {
+    content: none;
+  }
+
+  .activity-show-list {
+    .activity-show-list-item {
+      position: relative;
+      overflow: hidden;
+      background: #ffffff;
+      height: 115px;
+      border-radius: 8px;
+
+      .activity-show-list-item-img {
+        width: 127px;
+
+        img {
+          width: 127px;
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+        }
+      }
+
+      .activity-show-list-item-info {
+        img {
+          width: 127px;
+        }
+      }
+
+      .activity-show-list-item-text {
+        padding: 10px;
+        width: 216px;
+
+        .activity-show-list-item-text-time {
+          font-size: 12px;
+          position: absolute;
+          bottom: 8px;
+          color: #999999;
+        }
+      }
+
+    }
+  }
+
+  .activity-show-release {
+    .activity-show-release-list {
+      overflow-x: scroll;
+      white-space: nowrap;
+      scrollbar-width: none; /* firefox */
+      -ms-overflow-style: none; /* IE 10+ */
+      .activity-show-release-list-item {
+        display: inline-block;
+        white-space: normal;
+        width: 317px;
+        height: 140px;
+        padding: 15px 15px 8px 15px;
+        overflow: hidden;
+        white-space: normal;
+        background: #ffffff;
+        border-radius: 8px;
+
+        .activity-show-release-list-item-info {
+          overflow: hidden;
+          .activity-show-release-list-item-info-img {
+            float: left;
+
+            img {
+              display: block;
+              width: 80px;
+              height: 80px;
+              border-radius: 8px;
+            }
+          }
+
+          .activity-show-release-list-item-info-text {
+            width: 200px;
+            float: left;
+            height: 80px;
+            padding-left: 10px;
+
+            h5 {
+              font-size: 16px;
+              color: #000000;
+            }
+
+            p {
+              font-size: 14px;
+              margin-top: 6px;
+              margin-bottom: 6px;
+            }
+
+            span {
+              display: block;
+              font-weight: 300;
+              font-size: 14px;
+            }
+
+          }
+        }
+
+        .activity-show-release-list-item-user {
+          overflow: hidden;
+          .activity-show-release-list-item-user-img-list {
+            padding-top: 10px;
+
+            width: 70px;
+            height: 24px;
+            position: relative;
+            img{
+              width: 24px;
+              height: 24px;
+              border-radius: 24px;
+              position: absolute;
+            }
+            img:nth-child(2){
+              left: 16px;
+            }
+            img:nth-child(3){
+              left: 32px;
+            }
+          }
+
+          .activity-show-release-list-item-user-time {
+            padding-top: 10px;
+
+            span{
+              color: $orange;
+              font-weight: 300;
+            }
+          }
+
+          .activity-show-release-list-item-user-btn{
+            overflow: hidden;
+            a{
+              display: block;
+              height: 34px;
+              width: 84px;
+              color: #FFFFFF;
+              background: #1D8179;
+              text-align: center;
+              line-height: 34px;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+
+
+
+
+    }
+
+    .activity-show-release-list::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+
+}
+/*活动结束*/
+
+/*个人中心开始*/
+.user-page{
+  background: #1D8179;
+
+  .user-page-header{
+    overflow: hidden;
+    height: 100px;
+    background: #1D8179;
+    padding: 17.5px 16px 17.5px 16px;
+    .user-page-header-img{
+      width: 65px;
+      height: 65px;
+    }
+    .user-page-header-info{
+      padding-top:10px;
+      h5{
+        font-weight: 300;
+        font-size: 14px;
+      }
+      p{
+        font-weight: 300;
+        font-size: 12px;
+        span{
+          font-size: 18px;
+          font-weight: normal;
+        }
+      }
+    }
+    .user-page-header-btn{
+      padding-top: 5px;
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+
+
+  .user-page-body{
+    background: #FFFFFF;
+    height: 80vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    .user-page-body-nav-list{
+      font-size: 16px;
+      .user-page-body-nav-list-item {
+        height: 56px;
+        padding: 17px;
+        a {
+          color: #000000;
+          font-weight: normal;
+          img{
+            vertical-align:middle;
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+/*个人中心结束*/

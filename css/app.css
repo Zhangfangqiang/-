@@ -1,0 +1,601 @@
+@charset "UTF-8";
+/* 公共样式 */
+* {
+  padding: 0px;
+}
+
+body {
+  font-family: PingFang SC !important;
+  font-size: 14px;
+}
+body > div {
+  margin-bottom: 64px;
+}
+
+.pal {
+  left: 20px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.ml18 {
+  margin-left: 18px;
+}
+
+.c-white {
+  color: #FFFFFF;
+}
+
+.c-black {
+  color: #000000;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fw3 {
+  font-weight: 300;
+}
+
+.float-r {
+  float: right;
+}
+
+.float-l {
+  float: left;
+}
+
+.p12 {
+  padding: 12px;
+}
+
+.mt8 {
+  margin-top: 8px;
+}
+
+.ml8 {
+  margin-left: 8px;
+}
+
+.ml12 {
+  margin-left: 12px;
+}
+
+.mt12 {
+  margin-top: 12px !important;
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.mui-card {
+  box-shadow: none;
+}
+
+.mui-bar-tab .mui-tab-item .mui-icon ~ .mui-tab-label {
+  font-size: 10px;
+}
+
+.mui-bar-tab .mui-tab-item.mui-active {
+  color: #1D8179;
+}
+
+.mui-bar-tab .mui-tab-item .mui-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.zf-nav {
+  height: 64px;
+}
+
+/*首页样式开始*/
+.index-page {
+  padding: 15px;
+  background: #F7F9FB;
+  min-height: 100vh;
+}
+.index-page .mui-slider img {
+  height: 150px;
+  border-radius: 10px;
+}
+.index-page .zf-gong-ge .mui-grid-view.mui-grid-9 {
+  border: none;
+}
+.index-page .zf-gong-ge .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+  font-size: 14px;
+  margin-top: 2px;
+}
+.index-page .zf-gong-ge .mui-grid-view.mui-grid-9 .mui-table-view-cell {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.index-page .zf-gong-ge ul {
+  background: #F7F9FB !important;
+}
+.index-page .zf-gong-ge ul li {
+  padding-top: 0px !important;
+}
+.index-page .zf-gong-ge ul li a {
+  padding-top: 0px !important;
+}
+.index-page .zf-gong-ge .mui-grid-view.mui-grid-9 .mui-table-view-cell {
+  border: none;
+}
+.index-page .zf-article {
+  margin: 0px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+.index-page .zf-article .mui-table-view-cell:after {
+  content: unset;
+}
+.index-page .zf-article .mui-table-view-cell > a:not(.mui-btn) {
+  white-space: unset;
+}
+.index-page .zf-article .mui-card-header a {
+  color: #999999;
+}
+.index-page .zf-article .mui-card-footer:before, .index-page .zf-article .mui-card-header:after {
+  content: none;
+}
+.index-page .zf-article .mui-card-footer a {
+  display: block;
+  margin: 0 auto;
+  color: #fba137;
+}
+.index-page .zf-article .mui-card-content .mui-card-content-inner {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.index-page .zf-article .mui-card-content .mui-card-content-inner .mui-table-view .mui-media-object {
+  max-width: 100px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 10px;
+}
+.index-page .zf-article .mui-card-content .mui-card-content-inner li .zf-mui-ellipsis {
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.index-page .zf-article .mui-card-content .mui-card-content-inner li a {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/*首页样式结束*/
+/*预约咨询开始*/
+.order-page {
+  padding: 5px 15px 15px 15px;
+  background: #F7F9FB;
+  min-height: 100vh;
+}
+.order-page .mui-card-header {
+  padding: 0px;
+}
+.order-page .mui-card-header a {
+  color: #999999;
+}
+.order-page .mui-card-footer:before, .order-page .mui-card-header:after {
+  content: none;
+}
+.order-page .my-order .my-order-list {
+  height: 100px;
+  border-radius: 8px;
+  background: #FFFFFF;
+}
+.order-page .my-order .my-order-list .my-order-list-title {
+  overflow: hidden;
+}
+.order-page .my-order .my-order-list .my-order-list-title span:first-child {
+  float: left;
+  font-size: 16px;
+  color: #fba137;
+}
+.order-page .my-order .my-order-list .my-order-list-title span:last-child {
+  float: right;
+}
+.order-page .my-order .my-order-list .my-order-list-content {
+  overflow: hidden;
+}
+.order-page .my-order .my-order-list .my-order-list-content .my-order-list-content-info img {
+  width: 47px;
+  height: 47px;
+  border-radius: 47px;
+}
+.order-page .my-order .my-order-list .my-order-list-content .my-order-list-content-edit-button {
+  overflow: hidden;
+}
+.order-page .my-order .my-order-list .my-order-list-content .my-order-list-content-edit-button .mui-btn {
+  margin-top: 15px;
+  color: #FFFFFF;
+  background: #1D8179;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 3px 9px 3px 9px;
+}
+.order-page .my-history-order .my-history-order-list {
+  font-weight: 300;
+  position: relative;
+  border-radius: 8px;
+  background: #FFFFFF;
+  height: 57px;
+  overflow: hidden;
+  padding: 8px 0px 8px 0px;
+}
+.order-page .my-history-order .my-history-order-list .my-history-order-list-time {
+  width: 27.9%;
+}
+.order-page .my-history-order .my-history-order-list .my-history-order-list-time p {
+  margin-bottom: 0px;
+}
+.order-page .my-history-order .my-history-order-list .my-history-order-list-time p:first-child {
+  font-size: 14px;
+  text-align: center;
+}
+.order-page .my-history-order .my-history-order-list .my-history-order-list-time p:last-child {
+  font-size: 12px;
+  text-align: center;
+}
+.order-page .my-history-order .my-history-order-list .my-history-order-list-info {
+  width: 72.1%;
+}
+.order-page .my-history-order .my-history-order-list .my-history-order-list-info .my-history-order-list-info-text {
+  padding-left: 12px;
+}
+.order-page .my-history-order .my-history-order-list .my-history-order-list-info .my-history-order-list-info-text h5 {
+  margin-top: 0px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.order-page .my-history-order .my-history-order-list .my-history-order-list-info .my-history-order-list-info-text p {
+  margin: 0px;
+}
+.order-page .my-history-order .my-history-order-list .my-history-order-list-info .my-history-order-list-info-message span {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 12px;
+}
+.order-page .my-history-order .my-history-order-list-default .my-history-order-list-time:after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  background: #1D8179;
+  left: 27.5%;
+  width: 1px;
+  height: 30px;
+}
+.order-page .my-history-order .my-history-order-list-default .my-history-order-list-info-text h5 {
+  color: #999999;
+}
+.order-page .my-history-order .my-history-order-list-default .my-history-order-list-info-message span {
+  color: #1D8179;
+}
+.order-page .my-history-order .my-history-order-list-success .my-history-order-list-time:after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  background: #1D8179;
+  left: 27.5%;
+  width: 1px;
+  height: 30px;
+}
+.order-page .my-history-order .my-history-order-list-success .my-history-order-list-info-text h5 {
+  color: #1D8179;
+}
+.order-page .my-history-order .my-history-order-list-success .my-history-order-list-info-message span {
+  color: #1D8179;
+}
+.order-page .my-history-order .my-history-order-list-warning .my-history-order-list-time:after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  background: #fba137;
+  left: 27.5%;
+  width: 1px;
+  height: 30px;
+}
+.order-page .my-history-order .my-history-order-list-warning .my-history-order-list-info-text h5 {
+  color: #fba137;
+}
+.order-page .my-history-order .my-history-order-list-warning .my-history-order-list-info-message span {
+  color: #fba137;
+}
+
+/*预约咨询结束*/
+/*精品课开始*/
+.course-page {
+  padding: 15px 15px 15px 15px;
+  background: #F7F9FB;
+  min-height: 100vh;
+}
+.course-page input[type=search] {
+  border-radius: 30px;
+  border: 1px solid #1D8179;
+  height: 38px;
+  background: #FFFFFF;
+}
+.course-page .mui-search .mui-placeholder {
+  text-align: right;
+  margin-right: 10px;
+}
+.course-page .mui-search:before {
+  color: #1D8179 !important;
+  font-weight: 900;
+}
+.course-page .mui-search .mui-placeholder .mui-icon {
+  color: #1D8179 !important;
+  font-weight: 900;
+}
+.course-page .mui-placeholder span:last-child {
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+  height: 38px;
+  line-height: 38px;
+}
+.course-page .course-list .mui-card-header {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.course-page .course-list .mui-card-header a {
+  color: #999999;
+}
+.course-page .course-list .mui-card-footer:before, .course-page .course-list .mui-card-header:after {
+  content: none;
+}
+.course-page .course-list .course-list-introduce {
+  font-size: 16px;
+}
+.course-page .course-list .course-list-info {
+  height: 158px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scrollbar-width: none;
+  /* firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+.course-page .course-list .course-list-info .course-list-info-item {
+  display: inline-block;
+  white-space: normal;
+  width: 152px;
+  margin-right: 8px;
+}
+.course-page .course-list .course-list-info .course-list-info-item a {
+  padding: 0px;
+  margin: 0px;
+  display: inline;
+}
+.course-page .course-list .course-list-info .course-list-info-item img {
+  width: 100%;
+  height: 78px;
+  margin: 0px;
+  display: block;
+}
+.course-page .course-list .course-list-info .course-list-info-item h5 {
+  margin: 8px 0px 0px 0px;
+  font-size: 14px;
+}
+.course-page .course-list .course-list-info .course-list-info-item p {
+  font-size: 12px;
+}
+.course-page .course-list .course-list-info::-webkit-scrollbar {
+  display: none;
+}
+
+/*精品课结束*/
+/*活动开始*/
+.activity-page {
+  padding: 5px 15px 15px 15px;
+  background: #F7F9FB;
+  min-height: 100vh;
+}
+.activity-page .mui-card-header {
+  padding: 0px;
+  overflow: hidden;
+}
+.activity-page .mui-card-header a {
+  color: #999999;
+}
+.activity-page .mui-card-footer:before, .activity-page .mui-card-header:after {
+  content: none;
+}
+.activity-page .activity-show-list .activity-show-list-item {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  height: 115px;
+  border-radius: 8px;
+}
+.activity-page .activity-show-list .activity-show-list-item .activity-show-list-item-img {
+  width: 127px;
+}
+.activity-page .activity-show-list .activity-show-list-item .activity-show-list-item-img img {
+  width: 127px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.activity-page .activity-show-list .activity-show-list-item .activity-show-list-item-info img {
+  width: 127px;
+}
+.activity-page .activity-show-list .activity-show-list-item .activity-show-list-item-text {
+  padding: 10px;
+  width: 216px;
+}
+.activity-page .activity-show-list .activity-show-list-item .activity-show-list-item-text .activity-show-list-item-text-time {
+  font-size: 12px;
+  position: absolute;
+  bottom: 8px;
+  color: #999999;
+}
+.activity-page .activity-show-release .activity-show-release-list {
+  overflow-x: scroll;
+  white-space: nowrap;
+  scrollbar-width: none;
+  /* firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item {
+  display: inline-block;
+  white-space: normal;
+  width: 317px;
+  height: 140px;
+  padding: 15px 15px 8px 15px;
+  overflow: hidden;
+  white-space: normal;
+  background: #ffffff;
+  border-radius: 8px;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-info {
+  overflow: hidden;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-info .activity-show-release-list-item-info-img {
+  float: left;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-info .activity-show-release-list-item-info-img img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-info .activity-show-release-list-item-info-text {
+  width: 200px;
+  float: left;
+  height: 80px;
+  padding-left: 10px;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-info .activity-show-release-list-item-info-text h5 {
+  font-size: 16px;
+  color: #000000;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-info .activity-show-release-list-item-info-text p {
+  font-size: 14px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-info .activity-show-release-list-item-info-text span {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-user {
+  overflow: hidden;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-user .activity-show-release-list-item-user-img-list {
+  padding-top: 10px;
+  width: 70px;
+  height: 24px;
+  position: relative;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-user .activity-show-release-list-item-user-img-list img {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  position: absolute;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-user .activity-show-release-list-item-user-img-list img:nth-child(2) {
+  left: 16px;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-user .activity-show-release-list-item-user-img-list img:nth-child(3) {
+  left: 32px;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-user .activity-show-release-list-item-user-time {
+  padding-top: 10px;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-user .activity-show-release-list-item-user-time span {
+  color: #fba137;
+  font-weight: 300;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-user .activity-show-release-list-item-user-btn {
+  overflow: hidden;
+}
+.activity-page .activity-show-release .activity-show-release-list .activity-show-release-list-item .activity-show-release-list-item-user .activity-show-release-list-item-user-btn a {
+  display: block;
+  height: 34px;
+  width: 84px;
+  color: #FFFFFF;
+  background: #1D8179;
+  text-align: center;
+  line-height: 34px;
+  border-radius: 8px;
+}
+.activity-page .activity-show-release .activity-show-release-list::-webkit-scrollbar {
+  display: none;
+}
+
+/*活动结束*/
+/*个人中心开始*/
+.user-page {
+  background: #1D8179;
+}
+.user-page .user-page-header {
+  overflow: hidden;
+  height: 100px;
+  background: #1D8179;
+  padding: 17.5px 16px 17.5px 16px;
+}
+.user-page .user-page-header .user-page-header-img {
+  width: 65px;
+  height: 65px;
+}
+.user-page .user-page-header .user-page-header-info {
+  padding-top: 10px;
+}
+.user-page .user-page-header .user-page-header-info h5 {
+  font-weight: 300;
+  font-size: 14px;
+}
+.user-page .user-page-header .user-page-header-info p {
+  font-weight: 300;
+  font-size: 12px;
+}
+.user-page .user-page-header .user-page-header-info p span {
+  font-size: 18px;
+  font-weight: normal;
+}
+.user-page .user-page-header .user-page-header-btn {
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.user-page .user-page-body {
+  background: #FFFFFF;
+  height: 80vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.user-page .user-page-body .user-page-body-nav-list {
+  font-size: 16px;
+}
+.user-page .user-page-body .user-page-body-nav-list .user-page-body-nav-list-item {
+  height: 56px;
+  padding: 17px;
+}
+.user-page .user-page-body .user-page-body-nav-list .user-page-body-nav-list-item a {
+  color: #000000;
+  font-weight: normal;
+}
+.user-page .user-page-body .user-page-body-nav-list .user-page-body-nav-list-item a img {
+  vertical-align: middle;
+  margin-right: 16px;
+}
+
+/*个人中心结束*/
+
+/*# sourceMappingURL=app.css.map */
