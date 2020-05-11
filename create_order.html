@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title></title>
+    <link href="./css/mui.min.css" rel="stylesheet"/>
+    <link href="./css/app.css" rel="stylesheet">
+    <link href="./css/mui.picker.min.css" rel="stylesheet"/>
+    <link href="./css/mui.poppicker.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="create-order-page">
+
+    <div class="mui-card create-order-page-form">
+        <div class="mui-card-header f18">
+            咨询预约
+        </div>
+
+        <form class="mui-input-group">
+            <div class="mui-input-row">
+                <label>预约类型:</label>
+                <input  id="type" type="text" value="" hidden>
+                <button id='set-type' class="set-value-btn" type='button'>点击选择预约类型</button>
+            </div>
+            <div class="mui-input-row">
+                <label>姓名:</label>
+                <input type="text" class="mui-input-clear" placeholder="带清除按钮的输入框">
+            </div>
+            <div class="mui-input-row ">
+                <label>联系方式:</label>
+                <input type="number" class="mui-input-clear" placeholder="语音输入">
+            </div>
+            <div class="mui-input-row ">
+                <label>咨询医生:</label>
+                <input  id="name" type="text" value="" hidden>
+                <button id='set-name' class="set-value-btn" type='button'>点击选择医生</button>
+            </div>
+            <div class="mui-input-row ">
+                <label>日期:</label>
+                <input type="date" class="mui-input-clear" placeholder="语音输入">
+            </div>
+            <div class="mui-input-row ">
+                <label>时间:</label>
+                <input  id="time"     type="time" value="" hidden>
+                <button id='set-time' class="set-value-btn" type='button'>点击选择时间</button>
+            </div>
+            <div class="mui-button-row create-order-page-form-btn">
+                <button type="submit" class="mui-btn " onclick="return false;">马上预约</button>
+            </div>
+        </form>
+    </div>
+
+    <!--菜单导航开始-->
+    <nav class="mui-bar mui-bar-tab zf-nav" >
+        <a class="mui-tab-item mui-active" href="./index.html">
+            <img  class="mui-icon" src="./img/icon/an1.png" alt="">
+            <span class="mui-tab-label">心灵家园</span>
+        </a>
+        <a class="mui-tab-item" href="./order.html">
+            <img  class="mui-icon" src="./img/icon/n2.png" alt="">
+            <span class="mui-tab-label">预约咨询</span>
+        </a>
+        <a class="mui-tab-item" href="./course.html">
+            <img  class="mui-icon" src="./img/icon/n3.png" alt="">
+            <span class="mui-tab-label">精品课堂</span>
+        </a>
+        <a class="mui-tab-item" href="./activity.html">
+            <img  class="mui-icon" src="./img/icon/n4.png" alt="">
+            <span class="mui-tab-label">线下活动</span>
+        </a>
+        <a class="mui-tab-item" href="./user.html">
+            <img  class="mui-icon" src="./img/icon/n5.png" alt="">
+            <span class="mui-tab-label">我的中心</span>
+        </a>
+    </nav>
+    <!--菜单导航结束-->
+    <script src="./js/mui.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/mui.picker.js"></script>
+    <script src="./js/mui.poppicker.js"></script>
+    <script>
+        (function($, doc) {
+            $.init();
+            $.ready(function() {
+
+                function zfSelect(inputIdName, btnIdName , data) {
+                    var customData = new $.PopPicker();                  /*开始使用选项*/
+                    customData.setData(data);                            /*定义初始数据*/
+
+                    var inputId = doc.getElementById(inputIdName);       /*获取填充的表单地址*/
+                    var btnId   = doc.getElementById(btnIdName);         /*获取*/
+
+                    /*添加点击事件*/
+                    btnId.addEventListener('tap', function (event) {
+                        customData.show(function (items) {
+                            inputId.value   = items[0].value;
+                            btnId.innerHTML = items[0].text;
+                        });
+                    }, false);
+                }
+
+                zfSelect('name', 'set-name', [
+                    {
+                        value: 'ywj',
+                        text: '张医生'
+                    },
+                    {
+                        value: 'aaa',
+                        text: '李医生'
+                    },
+                    {
+                        value: 'lj',
+                        text: '赵医生'
+                    },
+                ]);
+
+                zfSelect('type', 'set-type', [
+                    {
+                        value: 'ywj',
+                        text: '首诊'
+                    },
+                    {
+                        value: 'aaa',
+                        text: '复诊'
+                    }
+                ]);
+
+                zfSelect('time', 'set-time', [
+                    {
+                        value: 'ywj',
+                        text: '9:00 - 10:00'
+                    },
+                    {
+                        value: 'aaa',
+                        text: '10:00 - 11:00'
+                    },
+                    {
+                        value: 'aaa',
+                        text: '11:00 - 12:00'
+                    },
+                    {
+                        value: 'aaa',
+                        text: '13:00 - 14:00'
+                    },
+                    {
+                        value: 'aaa',
+                        text: '14:00 - 15:00'
+                    }
+                ]);
+            });
+        })(mui, document);
+    </script>
+</div>
+</body>
+</html>

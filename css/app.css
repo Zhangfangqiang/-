@@ -8,8 +8,90 @@ body {
   font-family: PingFang SC !important;
   font-size: 14px;
 }
-body > div {
+body > .activity-page, body .course-page, body .create-order-page, body .index-page, body .order-page {
   margin-bottom: 64px;
+}
+
+.set-value-btn {
+  border: none;
+  font-weight: 300;
+  padding-left: 0px;
+}
+
+.text-hidden {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mb12 {
+  margin-bottom: 12px;
+}
+
+.mb24 {
+  margin-bottom: 24px !important;
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
+}
+
+.pl8 {
+  padding-left: 8px;
+}
+
+.zf-text-content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-indent: 1em;
+}
+.zf-text-content p {
+  color: #000000;
+}
+
+.zf-article {
+  margin: 0px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+.zf-article .mui-table-view-cell:after {
+  content: unset;
+}
+.zf-article .mui-table-view-cell > a:not(.mui-btn) {
+  white-space: unset;
+}
+.zf-article .mui-card-header a {
+  color: #999999;
+}
+.zf-article .mui-card-footer:before, .zf-article .mui-card-header:after {
+  content: none;
+}
+.zf-article .mui-card-footer a {
+  display: block;
+  margin: 0 auto;
+  color: #fba137;
+}
+.zf-article .mui-card-content .mui-card-content-inner {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.zf-article .mui-card-content .mui-card-content-inner .mui-table-view .mui-media-object {
+  max-width: 100px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 10px;
+}
+.zf-article .mui-card-content .mui-card-content-inner li .zf-mui-ellipsis {
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.zf-article .mui-card-content .mui-card-content-inner li a {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .pal {
@@ -22,6 +104,10 @@ body > div {
 
 .ml18 {
   margin-left: 18px;
+}
+
+.pl0 {
+  padding-left: 0px;
 }
 
 .c-white {
@@ -129,50 +215,6 @@ body > div {
 }
 .index-page .zf-gong-ge .mui-grid-view.mui-grid-9 .mui-table-view-cell {
   border: none;
-}
-.index-page .zf-article {
-  margin: 0px;
-  background: #FFFFFF;
-  border-radius: 8px;
-}
-.index-page .zf-article .mui-table-view-cell:after {
-  content: unset;
-}
-.index-page .zf-article .mui-table-view-cell > a:not(.mui-btn) {
-  white-space: unset;
-}
-.index-page .zf-article .mui-card-header a {
-  color: #999999;
-}
-.index-page .zf-article .mui-card-footer:before, .index-page .zf-article .mui-card-header:after {
-  content: none;
-}
-.index-page .zf-article .mui-card-footer a {
-  display: block;
-  margin: 0 auto;
-  color: #fba137;
-}
-.index-page .zf-article .mui-card-content .mui-card-content-inner {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-.index-page .zf-article .mui-card-content .mui-card-content-inner .mui-table-view .mui-media-object {
-  max-width: 100px;
-  height: 80px;
-  line-height: 80px;
-  border-radius: 10px;
-}
-.index-page .zf-article .mui-card-content .mui-card-content-inner li .zf-mui-ellipsis {
-  height: 40px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-.index-page .zf-article .mui-card-content .mui-card-content-inner li a {
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 /*首页样式结束*/
@@ -597,5 +639,230 @@ body > div {
 }
 
 /*个人中心结束*/
+/*中心介绍开始*/
+.introduce-page {
+  padding: 15px;
+  background: #F7F9FB;
+  min-height: 100vh;
+}
+.introduce-page .mui-slider img {
+  height: 150px;
+  border-radius: 10px;
+}
+.introduce-page .mui-card-header {
+  padding: 0px;
+}
+.introduce-page .mui-card-header a {
+  color: #999999;
+}
+.introduce-page .mui-card-footer:before, .introduce-page .mui-card-header:after {
+  content: none;
+}
+.introduce-page .introduce-page-teacher .introduce-page-teacher-item > a > div {
+  height: 55px;
+  background: #FFFFFF;
+  border-radius: 50px;
+}
+.introduce-page .introduce-page-teacher .introduce-page-teacher-item > a > div img {
+  margin-top: 2.5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 35px;
+  display: block;
+}
+.introduce-page .introduce-page-teacher .introduce-page-teacher-item > a > div h5 {
+  margin-top: 10px;
+}
+.introduce-page .introduce-page-teacher .introduce-page-teacher-item > a > div p {
+  font-weight: 300;
+  font-size: 12px;
+  margin: 0px;
+}
+@media (max-width: 400px) {
+  .introduce-page .introduce-page-teacher .introduce-page-teacher-item h5 {
+    width: 77px;
+  }
+  .introduce-page .introduce-page-teacher .introduce-page-teacher-item p {
+    width: 77px;
+  }
+}
+.introduce-page .introduce-page-teacher .introduce-page-teacher-item:nth-child(odd) > a > div {
+  margin-right: 4px;
+}
+.introduce-page .introduce-page-teacher .introduce-page-teacher-item:nth-child(even) > a > div {
+  margin-left: 4px;
+}
+
+/*中心介绍结束*/
+/*创建订单开始*/
+.create-order-page {
+  padding: 15px;
+  background: #F7F9FB;
+  min-height: 100vh;
+}
+.create-order-page .mui-card-header a {
+  color: #999999;
+}
+.create-order-page .mui-card {
+  margin: 0px;
+}
+.create-order-page .create-order-page-form {
+  border-radius: 8px;
+}
+.create-order-page .create-order-page-form .mui-card-footer:before, .create-order-page .create-order-page-form .mui-card-header:after {
+  content: none;
+}
+.create-order-page .create-order-page-form .mui-input-group .mui-input-row:after {
+  content: none;
+}
+.create-order-page .create-order-page-form .mui-input-group:after {
+  content: none;
+}
+.create-order-page .create-order-page-form .mui-input-group:before {
+  content: none;
+}
+.create-order-page .create-order-page-form .mui-input-row label {
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.create-order-page .create-order-page-form .mui-input-row label ~ input, .create-order-page .create-order-page-form .mui-input-row label ~ select, .create-order-page .create-order-page-form .mui-input-row label ~ textarea {
+  font-size: 14px;
+  font-weight: 300;
+}
+.create-order-page .create-order-page-form .create-order-page-form-btn {
+  height: 80px;
+}
+.create-order-page .create-order-page-form .create-order-page-form-btn button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 120px;
+  height: 50px;
+  background: #1D8179;
+  color: #FFFFFF;
+  border-radius: 8px;
+}
+
+/*创建订单结束*/
+/*密码登录 and 验证码登录开始*/
+.login-password-page, .login-verification-code-page {
+  padding: 15px;
+  padding-left: 36px;
+  padding-right: 36px;
+  background: #F7F9FB;
+  min-height: 100vh;
+}
+.login-password-page .login-password-page-head, .login-verification-code-page .login-password-page-head {
+  text-align: center;
+  margin-top: 56px;
+  margin-bottom: 60px;
+}
+.login-password-page .login-password-page-head p, .login-verification-code-page .login-password-page-head p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1D8179;
+  line-height: 35px;
+}
+.login-password-page .login-password-page-form input, .login-verification-code-page .login-password-page-form input {
+  height: 48px;
+  border-radius: 10px;
+}
+.login-password-page .login-password-page-form .login-password-page-form-link, .login-verification-code-page .login-password-page-form .login-password-page-form-link {
+  overflow: hidden;
+}
+.login-password-page .login-password-page-form .login-password-page-form-link a, .login-verification-code-page .login-password-page-form .login-password-page-form-link a {
+  color: #1D8179;
+  font-weight: normal;
+}
+.login-password-page .login-password-page-form .login-password-page-form-btn, .login-verification-code-page .login-password-page-form .login-password-page-form-btn {
+  font-size: 18px;
+}
+.login-password-page .login-password-page-form .login-password-page-form-btn button, .login-verification-code-page .login-password-page-form .login-password-page-form-btn button {
+  display: block;
+  width: 100%;
+  margin-top: 56px;
+  height: 48px;
+  background: #1D8179;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #1D8179;
+}
+.login-password-page .login-password-page-form .login-password-page-form-btn a, .login-verification-code-page .login-password-page-form .login-password-page-form-btn a {
+  color: #1D8179;
+  text-align: center;
+  line-height: 48px;
+  display: block;
+  width: 100%;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid #1D8179;
+  margin-top: 20px;
+}
+
+/*密码登录 and 验证码登录结束*/
+/*验证码登录开始*/
+.login-verification-code-page .verification-code {
+  overflow: hidden;
+}
+.login-verification-code-page .verification-code input {
+  float: left;
+  width: 60%;
+}
+.login-verification-code-page .verification-code button {
+  float: right;
+  width: 40%;
+  height: 48px;
+  background: #1D8179;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+}
+
+/*验证码登录结束*/
+/*忘记密码页开始*/
+.forget-password-page, .set-forget-password-page {
+  padding: 24px 16px 16px 15px;
+  background: #F7F9FB;
+  min-height: 100vh;
+}
+.forget-password-page .forget-password-page-form input, .set-forget-password-page .forget-password-page-form input {
+  height: 48px;
+  border-radius: 10px;
+}
+.forget-password-page .verification-code, .set-forget-password-page .verification-code {
+  overflow: hidden;
+}
+.forget-password-page .verification-code input, .set-forget-password-page .verification-code input {
+  float: left;
+  width: 60%;
+}
+.forget-password-page .verification-code button, .set-forget-password-page .verification-code button {
+  float: right;
+  width: 40%;
+  height: 48px;
+  background: #1D8179;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+}
+.forget-password-page .forget-password-page-form-btn, .set-forget-password-page .forget-password-page-form-btn {
+  font-size: 18px;
+}
+.forget-password-page .forget-password-page-form-btn button, .set-forget-password-page .forget-password-page-form-btn button {
+  display: block;
+  width: 100%;
+  margin-top: 160px;
+  height: 48px;
+  background: #1D8179;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #1D8179;
+}
+
+/*忘记密码页结束*/
 
 /*# sourceMappingURL=app.css.map */
